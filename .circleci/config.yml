@@ -1,28 +1,28 @@
 version: 2
 jobs:
-   build:
-     docker:
-       - image: circleci/node:8.9
-     steps:
-       - checkout
-       - run: echo "npm installing"
-       - run: npm install
-       - run: CI=true npm run build
-   test:
-     docker:
-       - image: circleci/node:8.9
-     steps:
-       - checkout
-       - run: echo "running tests for application"
-       - run: npm install
-       - run: npm test
+  build:
+    docker:
+      - image: circleci/node:8.9
+    steps:
+      - checkout
+      - run: echo "npm installing"
+      - run: npm install
+      - run: CI=true npm run build
+  test:
+    docker:
+      - image: circleci/node:8.9
+    steps:
+      - checkout
+      - run: echo "running tests for application"
+      - run: npm install
+      - run: npm test
 # random: check typescript, package.json commands (i.e. test coverage)
   hithere:
-     docker:
-       - image: circleci/node:8.9
-     steps:
-       - checkout
-       - run: echo "HI THERE!"
+    docker:
+      - image: circleci/node:8.9
+    steps:
+      - checkout
+      - run: echo "HI THERE!"
 workflows:
   version: 2
 # create-react-app won't allow npm run build if linting doesn't pass
