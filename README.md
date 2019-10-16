@@ -1,4 +1,8 @@
-## Continuous-Integration Guidelines
+## Continuous-Integration
+
+<p align="center">
+<img width="700" alt="continuous-integration-flow" src="https://user-images.githubusercontent.com/34965292/66897079-160e6900-efab-11e9-840b-7bb7f4379208.png">
+</p>
 
 **CI Guidelines:**
 
