@@ -12,9 +12,9 @@
      steps:
        - checkout
        - run: echo "Double the trouble!"
-  workflows:
-    version: 2
-    michael_jordan:
-      jobs:
-        - jordan
-        - michael
+    workflows:
+      version: 2
+      michael_jordan:
+        jobs:
+          - jordan
+          - michael
