@@ -10,6 +10,11 @@
 **Prettier:**
  - https://prettier.io/docs/en/precommit.html (Precommit Hook setup)
  - Setting precommit hook in package.json helps detects any formatting of code which needs to be "prettified"
+ - ``npm install --save-dev --save-exact prettier`` or globally ``npm install --global prettier``
+ - ``yarn add pretty-quick husky --dev`` install pretty-quick package to ensure entire file formatting on your changed/staged files.
+ - ``"pre-commit": "pretty-quick --staged"`` add this inside package.json under 'scripts'
+
+
  
 
 **Useful Links:**
