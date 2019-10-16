@@ -2,10 +2,14 @@
 
 **CI Guidelines:**
 
-- Should be implemented at the beginning of a project and then expand to continuous delivery and continous deployment.
-- Important to make pull requests daily and merges to master daily otherwise expose to having too many conflicts and easier to debug.
+- CI should be implemented at the beginning of a project and then expand to continuous delivery or continous deployment.
+- Code PRs should be run daily, as well as merging to master decreasing exposure to conflicts and bugs.  
+- Builds, steps, test steps, linting and other checks can run more successfully leading to code reviews and merging new features.
+- Testers can test software and manually deploy to production for actual usage in the real world or automated without testers as well.
 
-- **Helpful Tools:** Tests, Typescript Linting, Circle CI, Travis CI, Jenkins (similar to CircleCI but with flexibility to manage server), Bamboo, Codeship, Prettier
+
+
+- **Helpful Tools:** Tests, Typescript Linting, Circle CI, Travis CI, Jenkins (similar to CircleCI but with flexibility to manage server), Bamboo, Codeship, Prettier.
 
 **Prettier:**
  - https://prettier.io/docs/en/precommit.html (Precommit Hook setup)
@@ -20,3 +24,4 @@
 **Useful Links:**
 
 - https://circleci.com/docs/2.0/getting-started/#section=getting-started (Circle CI 2.0 Documentation + Setup config.yml)
+- https://www.npmjs.com/package/webpack-bundle-analyzer (Visualize size of webpack output files with an interactive zoomable treemap.)
